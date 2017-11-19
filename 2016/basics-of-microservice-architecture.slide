@@ -1,0 +1,165 @@
+Basics of Microservice architecture
+30  Mar 2016
+
+Matej Baćo
+Nivas d.o.o.
+@matejbaco
+
+* Microservices
+
+.image basics-of-microservice-architecture/images/Monolith-vs-Microservices.png
+
+* Characteristics
+
+- independent processes
+- "small"
+- business oriented
+- independently deployable
+- composable
+- communicate by simple mechanisms
+- coarse-grained data
+
+* Why microservices
+
+Age of rapid changes
+
+- scalable business
+- new business segments
+- innovations in old business segments
+
+* Why microservices
+
+.image basics-of-microservice-architecture/images/cynefin.jpg _ 512
+.caption Cynefin Framework - Dave Snowden
+
+* Why microservices
+
+- separation
+- evolution
+- domain driven
+- mix of technologies / platforms
+- experiment
+- one shot solution
+
+* Why microservices
+
+- FREEDOM
+.image basics-of-microservice-architecture/images/freedom.jpg
+
+- "Architecture that buys options for you" James Lewis
+
+* Principles
+
+- model around business domain
+- culture of automation
+- hide implementation details
+- decentralize for autonomy
+- independent deploy
+- client first, service as product
+- isolate failure
+- system monitoring
+
+* Architecture
+
+.image basics-of-microservice-architecture/images/taxi-service.png _ 768
+.caption * image taken from [[https://www.nginx.com/blog/building-microservices-inter-process-communication/][nginx.com]]
+
+* Architecture
+
+- services
+- API gateway
+- service bus and/vs message bus
+
+.image basics-of-microservice-architecture/images/netflix_apigateway.jpg _ 600
+.caption * image taken from [[http://techblog.netflix.com/2012/07/embracing-differences-inside-netflix.html][techblog.netflix.com]]
+
+* Communication between services
+
+- sync / async
+- sync: request -> response
+- async: notification
+- async: publish data -> subscribers
+- async: publish request -> responses
+- push over pull
+
+* Communication between services
+
+- HTTP: REST, [[https://thrift.apache.org][Trift]]
+- Message on wire: AMPQ, MQTT, STOMP
+- Text: JSON, XML
+- Binary: Protocol Buffers
+- RPC ([[http://www.grpc.io/][gRPC]])
+
+* Service as client
+
+- Timeout
+
+.code basics-of-microservice-architecture/src/timeout.go /START OMIT/,/END OMIT/
+
+* Service as client
+
+- Max standing requests
+
+.code basics-of-microservice-architecture/src/reqlimit.go /START OMIT/,/END OMIT/
+
+* Service as client
+
+- Rate limit
+
+.code basics-of-microservice-architecture/src/ratelimit.go /START OMIT/,/END OMIT/
+
+* Service
+
+- circuit breaker
+- fallback
+- context
+- Library: [[http://gokit.io][GoKit]], [[https://github.com/micro/go-micro][micro]]
+- Framework: [[https://github.com/nytimes/gizmo][Gizmodo]], [[https://github.com/koding/kite][Kite]]
+
+* Communication through the system
+
+- service bus
+- vs message bus
+
+* Service bus
+
+- direct connection
+- service registry
+- client type: [[https://www.consul.io/][Consul]], [[https://github.com/coreos/etcd][etcd]], [[https://github.com/gliderlabs/registrator][Registrator]]
+- server type: [[https://aws.amazon.com/elasticloadbalancing/][AWS ELB]], [[https://www.consul.io/][Consul]]
+- deployment environments: [[http://kubernetes.io/][Kubernetes]], [[https://www.docker.com/products/docker-swarm][Docker Swarm]], [[http://mesos.apache.org/][Apache Mesos]]
+
+* Message bus
+
+- indirect connection
+- async
+- storage
+- events
+- broker vs brokerless *
+- broker: [[http://kafka.apache.org/][Kafka]], [[https://www.rabbitmq.com/][RabbitMQ]], [[http://redis.io/][Redis]], [[http://nats.io/][NATS]]
+- brokerless: [[http://zeromq.org/][ZeroMQ]], [[http://nanomsg.org/][nanomsg]]
+- CQRS
+
+.caption * Article: [[http://bravenewgeek.com/dissecting-message-queues/][Dissecting Message Queues]]
+
+* Challenges and weaknesses
+
+- organization of teams and people
+- complex system interconnections
+- harder refactoring
+- remote calls
+- service composition
+- eventual consistency
+- too much of used technologies / platforms
+
+* Challenges and weaknesses
+
+"You should not attempt microservices unless you know the domain really well."
+-- Martin Fowler
+
+* Conclusion
+
+- independent
+- faster development
+- complex interconnections
+- constant change
