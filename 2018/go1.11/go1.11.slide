@@ -26,3 +26,7 @@ Matej Baćo
 - amd64 AVX512 assembler instructions
 
 .link https://golang.org/doc/go1.11 The whole list
+
+* QR URL
+
+.image img/qr.gif
