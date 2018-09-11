@@ -1,0 +1,28 @@
+New in Go v1.11
+13 Sep 2018
+
+Matej Baćo
+@matejbaco
+
+* WebAssembly
+
+- GOOS js
+- GOARCH wasm
+
+.link https://youtu.be/-BS1fJ2E4ms Talk recording: Go i WASM by Antonio Nešić
+.link https://github.com/golang/go/wiki/WebAssembly WebAssembly Go wiki page
+
+* Modules
+
+.image img/2hpy07.jpg
+
+* Other news
+
+- runtime/trace user annotation API
+- godoc shows initial Go version of type, funcs and methods
+- gofmt changed how it align inline comments
+- os.UserCacheDir and other os pkg goodies
+- time parsing timezones denoted by sign and offset
+- amd64 AVX512 assembler instructions
+
+.link https://golang.org/doc/go1.11 The whole list
