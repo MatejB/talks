@@ -1,0 +1,92 @@
+Go on AWS Lambda
+Lessons learned after a year in production
+13 Jun 2019
+
+Matej Baćo
+Medisanté AG
+https://medisante.ch/
+@matejbaco
+
+* TOC
+
+- what
+- why
+- how
+
+* Lambda
+
+Run code without thinking about servers.
+Pay only for the compute time you consume.
+
+* Serverless
+
+- Managed
+- Pay per alocation of compute resorces
+- Latency, Vendor lock-in, Monitoring, Debugging
+- AllServices?
+
+* FaaS
+
+Execute your code in event based manner
+
+* Microservices
+
+- Application is multi process one
+- Connection is over network
+- Individual application components are business focused
+- Components data separation
+
+* Focus on bussines value
+
+- Ops == configure
+- Services:
+  Database
+  Auth
+  Docs
+  Limits
+  Retries
+  Security
+  Tracing
+  Audit
+
+* Pricing
+
+- Lambda execution time
+- DynamoDB on-demand (read and writes you perform)
+
+* Nature of the workloads
+
+* Arhitecture
+
+- Old practices apply
+  Interface / Data
+    Application
+      Bussiness
+
+.code code/layers.go /^func main/,/^}/
+
+* Invocation types
+
+- Direct sync/async
+- API Gateway
+- SQS
+- ....
+
+* Challenges
+
+- Execution time
+- Cold starts
+- Local development
+- SDK
+- Logging
+- Tracing
+
+* AWS service testing
+
+.code code/aws_service_testing.go /^func TestX/,/^}/
+
+* Is Go a good fit?
+
+No!
+
+Ok ok it has some good things.
