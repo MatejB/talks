@@ -1,0 +1,51 @@
+Community news / Go 1.13
+24 Sep 2019
+
+* Community news / Conferences
+
+.image images/webcampZg.svg _ 200
+.caption Zagreb, 11 - 12 October 2019, Free tickets to active members
+
+.image images/golab.png _ 600
+.caption Florence Italy, 20th - 22nd October 2019, [[https://golab.io/page/1421515/registration-no-ita?promo=MP30GL][30% discount on tickets]]
+
+* Community news / Jobs
+
+.link https://sematext.com/jobs/ Sematex - Full Stack Observability
+
+.link http://rep.hr/oglas-posao/golang-developer/383 Crossvallia - High-volume websites, secure GNU/Linux services, and global data networks
+
+.link https://medisante.ch/ Medisanté - Global Medical IoT Infrastructure
+
+and others I forgot when creating this slide ( ￣▽￣)/
+
+* Go 1.13 / Languange changes
+
+New number literals and digit separators
+
+.play code/number_literals.go /^const/,/^}/
+
+* Go 1.13 / Error wrapping
+
+New error handing mechanics.
+
+.link code/errors.go Demo code/errors.go
+
+.link https://github.com/golang/go/wiki/ErrorValueFAQ Go wiki Error Value FAQ
+
+* Go 1.13 / Modules!
+
+- Modules enabled by default
+- Mirror and cheksum database [[https://blog.golang.org/module-mirror-launch][blog post]]
+
+Pick this topic for a full talk!
+
+* Go 1.13 / Release Notes
+
+.image images/qReleaseNotes.png _ 400
+.caption https://golang.org/doc/go1.13
+
+* This slide show
+
+.image images/qSlides.png _ 250
+.caption https://talks.godoc.org/github.com/matejb/talks/2019/Go113/Go113.slide

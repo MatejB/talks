@@ -3,6 +3,7 @@
 ## 2019
 
 - [Go on AWS Lambda](https://talks.godoc.org/github.com/matejb/talks/2019/GoOnAwsLambda/GoOnAwsLambda.slide#1)
+- [Community news / Go 1.13](https://talks.godoc.org/github.com/matejb/talks/2019/Go113/Go113.slide)
 
 ## 2018
 
