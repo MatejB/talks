@@ -29,7 +29,7 @@ New number literals and digit separators
 
 New error handing mechanics.
 
-.link code/errors.go Demo code/errors.go
+.link https://raw.githubusercontent.com/matejb/talks/master/2019/Go113/code/errors.go Demo code/errors.go
 
 .link https://github.com/golang/go/wiki/ErrorValueFAQ Go wiki Error Value FAQ
 
