@@ -1,0 +1,108 @@
+10th anniversary of the Go release
+19 Nov 2019
+
+* 10th anniversary of the Go release
+
+.image images/gopher10th-large.jpg _ 700
+
+* Anniversary Sponsors
+
+.image images/minus5_logotip_transparent_320px_72ppi.png
+
+.image images/FER_logo.jpg 200 _
+
+* Why Go was made?
+
+- Less is more
+- Clear is better then clever
+- Concrete, behavior driven
+- To be a tool first
+- To be a boring langunage
+
+    The point of the language for us was we were trying to make it easier for us
+    to build the software that we wrote in our day-to-day lives, and we thought
+    that we didn’t need all that complexity to do a good job of that.
+    – Rob Pike in GoTime podcast
+
+    It is intended that programs written to the Go 1 specification will continue
+    to compile and run correctly, unchanged, over the lifetime of that
+    specification.
+    – Go v1 guarantee
+
+* Notable time points
+
+2012-03-28 - v1.0.0
+
+2015-08-19 - v1.5.0
+
+    The compiler and runtime are now implemented in Go and assembler, without C.
+
+    The garbage collector has been re-engineered. The "stop the world" phase of
+    the collector will almost always be under 10 milliseconds and usually much
+    less.
+
+2017-02-16 - v1.8.0
+
+    Garbage collection pauses usually under 100 microseconds and often as low as 10 microseconds.
+
+2017-08-24 - v1.9.0
+
+    Type aliases.
+
+    Compiler now supports compiling a package's functions in parallel.
+
+* Notable time points
+
+2018-08-24 - v1.11.0
+
+    Experimental port to WebAssembly.
+
+    Preliminary support for a new concept called “modules”, an alternative to
+    GOPATH with integrated support for versioning and package distribution.
+
+2019-09-03 - v1.13.0
+
+    Modules are default.
+
+    Support for error wrapping.
+
+* Notable open source applications
+
+- Docker, a set of tools for deploying Linux containers
+- Kubernetes, a container management system
+- Juju, a service orchestration tool by Canonical
+- OpenShift, a cloud computing platform as a service by Red Hat
+- Terraform, multiple cloud infrastructure provisioning tool from HashiCorp
+- Consul, the Single Control Plane for Cloud Networks from HashiCorp
+- Valut, secure, store and tightly control access to tokens, passwords, certificates, encryption keys for protecting secrets and other sensitive data from HashiCorp
+
+* Notable open source applications
+
+- CockroachDB, an open source, survivable, strongly consistent, scale-out SQL database
+- InfluxDB, database specifically to handle time series data with high availability and high performance requirements
+- Vitess, a database clustering system for horizontal scaling of MySQL
+- Ethereum, implementation of the Ethereum Virtual Machine blockchain for the Ether cryptocurrency
+- Hugo, a static site generator
+- Caddy, HTTP/2 web server with automatic HTTPS capability
+
+* Closed source
+
+Google, YouTube, CloudFlare, Alibaba, Dropbox, Heroku, Netflix, HAProxy Technologies, SoundCloud, Uber, Chango, Cloud Foundry, Couchbase, MongoDB, Splice, Twitch.tv, ThoughtWorks, Canonical, Medium, Walmart, 1Password, Intercom, booking.com, BBC, GOV.UK, 99designs, Adobe, American Express, Amazon Web Services, AT&T, Salesforce, Basecamp, Bitbucket, eBay, Facebook, GitHub, Hewlett Packard Enterprise, IBM, Intel, Mattel, Mozilla, Nike, Twitter, Western Digital, VMware
+
+minus5, Crossvallia, Kraken, GoodCode, b2match, Rentlio, Aduro Idea, Axilis, Medisanét
+
+* Go today
+
+   How Many Go Developers Are There?
+   As of November 2019, my best estimate is between 1.15 and 1.96 million.
+   – Russ Cox
+
+- 27 conferenences in 2019
+
+* What the future holds
+
+- Go 2
+- go.dev
+- pkg.go.dev - a peephole into module proxy, sum and index
+
+A boring langunage!
