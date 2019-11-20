@@ -74,7 +74,7 @@
 - OpenShift, a cloud computing platform as a service by Red Hat
 - Terraform, multiple cloud infrastructure provisioning tool from HashiCorp
 - Consul, the Single Control Plane for Cloud Networks from HashiCorp
-- Valut, secure, store and tightly control access to tokens, passwords, certificates, encryption keys for protecting secrets and other sensitive data from HashiCorp
+- Vault, secure, store and tightly control access to tokens, passwords, certificates, encryption keys for protecting secrets and other sensitive data from HashiCorp
 
 * Notable open source applications
 
@@ -89,7 +89,7 @@
 
 Google, YouTube, CloudFlare, Alibaba, Dropbox, Heroku, Netflix, HAProxy Technologies, SoundCloud, Uber, Chango, Cloud Foundry, Couchbase, MongoDB, Splice, Twitch.tv, ThoughtWorks, Canonical, Medium, Walmart, 1Password, Intercom, booking.com, BBC, GOV.UK, 99designs, Adobe, American Express, Amazon Web Services, AT&T, Salesforce, Basecamp, Bitbucket, eBay, Facebook, GitHub, Hewlett Packard Enterprise, IBM, Intel, Mattel, Mozilla, Nike, Twitter, Western Digital, VMware
 
-minus5, Crossvallia, Kraken, GoodCode, b2match, Rentlio, Aduro Idea, Axilis, Medisanét
+minus5, Crossvallia, Kraken, GoodCode, b2match, Rentlio, Aduro Idea, Axilis, Medisanté
 
 * Go today
 
@@ -105,4 +105,4 @@ minus5, Crossvallia, Kraken, GoodCode, b2match, Rentlio, Aduro Idea, Axilis, Med
 - go.dev
 - pkg.go.dev - a peephole into module proxy, sum and index
 
-A boring langunage!
+A boring language!
