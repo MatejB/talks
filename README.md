@@ -1,5 +1,9 @@
 # talks
 
+## 2020
+
+- [Community news / Go 1.14](https://talks.godoc.org/github.com/matejb/talks/2020/Go114/Go114.slide)
+
 ## 2019
 
 - [10th anniversary of the Go release](https://talks.godoc.org/github.com/matejb/talks/2019/Go10years/Go10years-v2.slide)

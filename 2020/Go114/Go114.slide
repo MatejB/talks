@@ -1,0 +1,58 @@
+Community news / Go 1.14
+21 Apr 2020
+
+* Community news
+
+.image images/zoom.png
+
+* Conferences
+
+GopherCon Europe is moving to end of June as a online event.
+Code welovegophers should give you 10% discount.
+.link https://gophercon.berlin/ Gophercon Europe 2020
+
+New online conferences:
+
+.link https://www.gogetcommunity.com/ Go get community - Mar 19th to 21th
+.link https://www.goremotefest.com/ Go remote Fest - Apr 26th
+
+* Go 1.14 / Languange changes
+
+Go 1.14 now permits embedding of interfaces with overlapping method sets: methods from an embedded interface may have the same names and identical signatures as methods already present in the (embedding) interface.
+
+.play code/read_write_closer.go /^type/,/^}/
+
+* Go 1.14 / Modules
+
+- vendoing works once again
+- Env var GOINSECURE instructs go command not to require HTTPS connection and skips certificate validation
+- a lot more ...
+
+* Go 1.14 / Testing
+
+go test -v now streams t.Log output as it happens, rather than at the end of all tests
+
+* Go 1.14 / Runtime
+
+- defer performance drastically improved, can now be used in performance-critical code without overhead concerns 
+- goroutines are now asynchronously preemptible (loops without function calls no longer potentially deadlock the scheduler or significantly delay garbage collection)
+
+* Go 1.14 / Packages
+
+New std lib package - hash/maphash
+
+Provides hash functions on byte sequences. These hash functions are intended to be used to implement hash tables or other data structures that need to map arbitrary strings or byte sequences to a uniform distribution on unsigned 64-bit integers.
+
+The hash functions are collision-resistant but not cryptographically secure.
+
+* Go 1.14 / Packages
+
+	func (t *T) Cleanup(f func())
+
+Cleanup registers a function to be called when the test and all its subtests complete.
+
+.play code/cleanup_test.go /^func/,/^}/
+
+* Go 1.14 / Release Notes
+
+.link https://golang.org/doc/go1.14 Complete v1.14 release notes 
