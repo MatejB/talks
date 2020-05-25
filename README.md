@@ -2,6 +2,7 @@
 
 ## 2020
 
+- [Community news in May](https://talks.godoc.org/github.com/matejb/talks/2020/CommunityNewsMay/CommunityNewsMay.slide)
 - [Community news / Go 1.14](https://talks.godoc.org/github.com/matejb/talks/2020/Go114/Go114.slide)
 
 ## 2019
