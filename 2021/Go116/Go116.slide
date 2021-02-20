@@ -1,0 +1,83 @@
+Community news / Go 1.16
+23 Feb 2021
+
+* Community news
+
+.link https://1refl0iq4q3.typeform.com/report/a1nsdRCS/8wpzVTm5H53ROwYl Golang Zg 2021 suvery results
+
+.image images/qr-poll-results.png
+
+* Go 1.16 / Ports
+
+- GOOS=darwin GOARCH=arm64
+- GOOS=ios GOARCH=arm64
+
+* Go 1.16 / Modules 
+
+- GO111MODULES=on is now the default
+- go build and go test no longer modify mod files
+- go install golang.org/x/tools/gopls@v0.6.5
+- go get -d
+- retract directive
+
+* Go 1.16 / Tools
+
+- go test os.Exit(0) failes the test
+- go get -insecure flag is deprecated, use the GOINSECURE env variable instead
+- GOVCS environment variable
+
+* Go 1.16 / Runtime
+
+- new runtime/metrics package
+- GODEBUG=inittrace=1
+- GODEBUG=madvdontneed=1 not needed anymore
+- fix for discrepancy between the race detector and the Go memory model
+
+* Go 1.16 / Compiler & Linker
+
+- inline functions with non-labeled for loops, method values, and type switches
+- inliner can also detect more indirect calls where inlining is possible
+- reduced linker resource usage (both time and memory)
+
+* Go 1.16 / Core library / embed
+
+- embed package and directive
+
+    import _ "embed"
+
+    //go:embed hello.txt
+    var s string
+    print(s)
+
+* Go 1.16 / Core library / io/fs
+
+- new io/fs package
+- defines the fs.FS interface, an abstraction for read-only trees of files
+- implemented by: os.DirFS, embed.FS, zip.Reader
+- new http.FS function converts an fs.FS to an http.FileSystem
+- html/template and text/template packages ParseFS functions and methods read templates from an fs.FS
+- new testing/fstest package provides testing suite for implementations of fs.FS
+
+* Go 1.16 / Core library / io/ioutil depricated
+
+- Discard => io.Discard
+- NopCloser => io.NopCloser
+- ReadAll => io.ReadAll
+- ReadDir => os.ReadDir (note: returns a slice of os.DirEntry rather than a slice of fs.FileInfo)
+- ReadFile => os.ReadFile
+- TempDir => os.MkdirTemp
+- TempFile => os.CreateTemp
+- WriteFile => os.WriteFile
+
+* Go 1.16 / Core library / other changes
+
+- log - new Default function provides access to the default Logger
+- net - ErrClosed - before any of the I/O completes
+- os/signal - new NotifyContext function allows creating contexts that are canceled upon arrival of specific signals
+- path/filepath - new function WalkDir is similar to Walk, but is typically more efficient
+
+* Go 1.16 / Release Notes
+
+.link https://golang.org/doc/go1.16 Complete v1.16 release notes 
+
+.image images/qr-116-release-notes.png
