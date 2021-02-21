@@ -1,0 +1,46 @@
+GoLearn / Constants
+23 Feb 2021
+
+* Constants / What are they?
+
+In Go, const is a keyword introducing a name for a scalar value such as 2 or
+3.14159 or "foo". Such values, named or otherwise, are called constants in Go.
+Constants can also be created by expressions built from constants, such as 2+3
+or 2+3i or math.Pi/2 or ("go"+"pher").
+
+* Constants / Untyped?
+
+.play -edit code/constants-001.go /SHOW OMIT/,/END OMIT/
+
+      One way to think about untyped constants is that they live in a kind of
+      ideal space of values, a space less restrictive than Go's full type
+      system. But to do anything with them, we need to assign them to variables,
+      and when that happens the variable (not the constant itself) needs a type,
+      and the constant can tell the variable what type it should have.
+
+* Constants / Default type
+
+Determined by syntax:
+
+- string - string
+- integer - int
+- float - float64
+- boolean - bool
+- rune - rune (int32)
+- imaginary - complex128
+
+.play -edit code/constants-002.go /SHOW OMIT/,/END OMIT/
+
+* Constants / Arbitrary-precision numeric space
+
+.play -edit code/constants-003.go /SHOW OMIT/,/END OMIT/
+
+* Constants / Flexibity
+
+.play -edit code/constants-004.go /SHOW OMIT/,/END OMIT/
+
+* Constants / iota
+
+.play -edit code/constants-005.go /SHOW OMIT/,/END OMIT/
+
+.play -edit code/constants-006.go /SHOW OMIT/,/END OMIT/
