@@ -1,5 +1,10 @@
 # talks
 
+## 2021
+
+- [GoLearn - constants](https://talks.godoc.org/github.com/matejb/talks/2021/GoLearn/const.slide)
+- [Community news / Go 1.16](https://talks.godoc.org/github.com/matejb/talks/2021/Go116/Go116.slide)
+
 ## 2020
 
 - [Community news in May](https://talks.godoc.org/github.com/matejb/talks/2020/CommunityNewsMay/CommunityNewsMay.slide)
